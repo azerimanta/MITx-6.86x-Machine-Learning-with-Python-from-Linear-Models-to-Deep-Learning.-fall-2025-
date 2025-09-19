@@ -1,0 +1,15 @@
+""""
+Write a function called operations that takes as input two positive integers h and w, 
+makes two random matrices A and B, of size h x w, and returns A,B, and s, the sum of A and B.
+"""
+
+import numpy as np
+def operations(h, w):
+   A=np.random.random((h,w))
+   B=np.random.random((h,w))
+   s=A+B
+   return {"A": A, "B": B, "A+B": s}
+   
+
+print(operations(2,3))
+

@@ -1,0 +1,9 @@
+"""
+Write a function called randomization that takes as input a positive integer n, 
+and returns A, a random n x 1 Numpy array.
+"""
+import numpy as np
+def randomization(n):
+    return np.random.random((n,1))
+
+print(randomization(4))
